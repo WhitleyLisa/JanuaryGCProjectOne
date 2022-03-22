@@ -1,0 +1,32 @@
+﻿{
+  "isbn": 1,
+  "title": "",
+  "author": "",
+  "isPlayable": true,
+  "mainStat": 0,
+  "hpModifier": 3,
+  "mpModifier": 0,
+  "playableRaces": [
+    {
+      "name": "Dragonborn"
+    },
+    {
+      "name": "Human"
+    },
+    {
+      "name": "Elf"
+    },
+    {
+      "name": "Half-Elf"
+    },
+    {
+      "name": "Gnome"
+    },
+    {
+      "name": "Tiefling"
+    },
+    {
+      "name": "Dwarf"
+    }
+  ]
+}
