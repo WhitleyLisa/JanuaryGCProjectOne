@@ -1,32 +1,67 @@
 ﻿{
-  "isbn": 1,
-  "title": "",
-  "author": "",
-  "isPlayable": true,
-  "mainStat": 0,
-  "hpModifier": 3,
-  "mpModifier": 0,
-  "playableRaces": [
+  "comedy": [
     {
-      "name": "Dragonborn"
+      "isbn": 1,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Human"
+      "isbn": 2,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Elf"
+      "isbn": 3,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Half-Elf"
+      "isbn": 4,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Gnome"
+      "isbn": 5,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Tiefling"
+      "isbn": 6,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     },
     {
-      "name": "Dwarf"
+      "isbn": 7,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     }
   ]
 }

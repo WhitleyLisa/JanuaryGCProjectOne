@@ -1,12 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LibraryApp.Database.BookTable
-{
-    class romcom
+﻿{
+  "romanticComedy": [
     {
+      "isbn": 1,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 2,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 3,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 4,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 5,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 6,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
+    },
+    {
+      "isbn": 7,
+      "title": "",
+      "author": "",
+      "isPlayable": true,
+      "mainStat": 0,
+      "hpModifier": 3,
+      "mpModifier": 0
     }
+  ]
 }
