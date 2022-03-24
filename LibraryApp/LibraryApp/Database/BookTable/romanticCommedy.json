@@ -2,66 +2,52 @@
   "romanticComedy": [
     {
       "isbn": 1,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Unhoneymooners",
+      "author": "Christina Lauren",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 2,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Paid Bridesmaid",
+      "author": "Sariah Wilson",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 3,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Ties That Tether",
+      "author": "Jane Igharo",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 4,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Love Hypothesis",
+      "author": "Ali Hazelwood",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 5,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Get a Life, Chloe Brown",
+      "author": "Talia Hibbert",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 6,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Charm Offensive",
+      "author": "Alison Cochrun",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 7,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Right Swipe",
+      "author": "Alisha Rai",
+      "CheckedOut": false,
+      "DueDate": null
     }
   ]
 }
