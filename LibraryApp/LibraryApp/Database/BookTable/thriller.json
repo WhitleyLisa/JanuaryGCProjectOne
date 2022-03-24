@@ -4,17 +4,15 @@
       "isbn": 1,
       "title": "Sahara",
       "author": "Clive Cussler",
-      "CheckOut":false,
+      "CheckOut": false,
       "DueDate": null
     },
     {
       "isbn": 2,
       "title": "The Hunt For Red October",
       "author": "Tom Clancy",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 3,
