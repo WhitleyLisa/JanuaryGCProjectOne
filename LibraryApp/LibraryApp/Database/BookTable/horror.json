@@ -2,66 +2,115 @@
   "horror": [
     {
       "isbn": 1,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "It",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 2,
       "title": "",
       "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 3,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Carrion Comfort",
+      "author": "Dan Simmons",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 4,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Piercing",
+      "author": "Ryu Murakami",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 5,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Institute",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 6,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "If it Bleeds",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 7,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Sentinel",
+      "author": "Drew Starling",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 8,
+      "title": "The Resurrectionist",
+      "author": "E. B. Hudspeth",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 9,
+      "title": "The Sun Down Motel",
+      "author": "Simone St. James",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 11,
+      "title": "The Outsider",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 12,
+      "title": "The Excorcist",
+      "author": "The Excorcist",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 13,
+      "title": "American Psycho",
+      "author": "Bret Easton Ellis",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 14,
+      "title": "The Stand",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 15,
+      "title": "The Shining",
+      "author": "Stephen King",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 16,
+      "title": "Kill Creek",
+      "author": "Scott Thomas",
+      "CheckOut": false,
+      "DueDate": null
+    },
+    {
+      "isbn": 17,
+      "title": "Kill Creek",
+      "author": "Scott Thomas",
+      "CheckOut": false,
+      "DueDate": null
     }
   ]
 }

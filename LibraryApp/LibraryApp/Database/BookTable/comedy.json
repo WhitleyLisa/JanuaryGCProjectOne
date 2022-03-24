@@ -2,66 +2,52 @@
   "comedy": [
     {
       "isbn": 1,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Ultimate Hitchhiker's Guide To The Galaxy",
+      "author": "Douglas Adams",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 2,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "One More Thing",
+      "author": "B.J. Novak",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 3,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Bossypants",
+      "author": " Tina Fey",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 4,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Hyperbole And A Half",
+      "author": "Allie Brosh",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 5,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Paddle Your Own Canoe",
+      "author": "Nick Offerman",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 6,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Sellout",
+      "author": "Paul Beatty",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 7,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Little Victories",
+      "author": "Jason Gay",
+      "CheckOut": false,
+      "DueDate": null
     }
   ]
 }

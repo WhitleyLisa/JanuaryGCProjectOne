@@ -2,66 +2,52 @@
   "nonFiction": [
     {
       "isbn": 1,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Just Us",
+      "author": "Claudia Rankine",
+      "CheckedOut": false,
+      "DueDate":  null
     },
     {
       "isbn": 2,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Having and Being Had",
+      "author": "Eula Biss",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 3,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Undocumented Americans",
+      "author": "Karla Cornejo Villavicencio",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 4,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Vesper Flights",
+      "author": "Helen Macdonald",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 5,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Memorial Drive",
+      "author": "Natasha Trethewey",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 6,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Dragons, the Giant, the Women",
+      "author": "Wayétu Moore",
+      "CheckedOut": false,
+      "DueDate": null
     },
     {
       "isbn": 7,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Minor Feelings",
+      "author": "Cathy Park Hong",
+      "CheckedOut": false,
+      "DueDate": null
     }
   ]
 }
