@@ -1,64 +1,49 @@
 ﻿{
   "member": [
     {
-      "memberId": 1,
+      "Id": 1,
       "firstname": "Sonia",
       "lastname": "Ross",
-      "email": "sross@gclibrary.com"
+      "email": "sross@gclibrary.com",
+      "bookList": [
+        {
+          "isbn": 2,
+          "title": "One More Thing",
+          "author": "B.J. Novak",
+          "checkedOutDate": "", // how to express datetime in a json
+          "dueDate": ""
+        }
+      ]
     },
     {
-      "memberId": 2,
+      "Id": 2,
       "firstname": "Lisa",
       "lastname": "Whitley",
       "email": "lWhitley@gclibrary.com"
     },
     {
-      "memberId": 3,
+      "Id": 3,
       "firstname": "Jay",
       "lastname": "Dourocher",
       "email": "jdourocher@gclibrary.com"
     },
     {
-      "memberId": 4,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
+      "Id": 4,
+      "firstname": "",
+      "lastname": "",
+      "email": ""
     },
     {
-      "memberId": 5,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
+      "Id": 5,
+      "firstname": "",
+      "lastname": "",
+      "email": ""
     },
     {
-      "memberId": 6,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
-    },
-    {
-      "memberId": 7,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
-    },
-    {
-      "memberId": 8,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
-    },
-    {
-      "memberId": 9,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
-    },
-    {
-      "memberId": 10,
-      "firstname": "Jay",
-      "lastname": "Dourocher",
-      "email": "jdourocher@gclibrary.com"
+      "Id": 6,
+      "firstname": "",
+      "lastname": "",
+      "email": ""
     }
   ]
 }
