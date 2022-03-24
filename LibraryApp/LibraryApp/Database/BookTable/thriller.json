@@ -2,17 +2,15 @@
   "thriller": [
     {
       "isbn": 1,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Sahara",
+      "author": "Clive Cussler",
+      "CheckOut":false,
+      "DueDate": null
     },
     {
       "isbn": 2,
-      "title": "",
-      "author": "",
+      "title": "The Hunt For Red October",
+      "author": "Tom Clancy",
       "isPlayable": true,
       "mainStat": 0,
       "hpModifier": 3,
@@ -20,48 +18,31 @@
     },
     {
       "isbn": 3,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "A Time to Kill",
+      "author": "John Grisham",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 4,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "And Then There Were None",
+      "author": "Agatha Christie",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 5,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "The Talented Mr. Ripley",
+      "author": "Patricia Highsmith",
+      "CheckOut": false,
+      "DueDate": null
     },
     {
       "isbn": 6,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
-    },
-    {
-      "isbn": 7,
-      "title": "",
-      "author": "",
-      "isPlayable": true,
-      "mainStat": 0,
-      "hpModifier": 3,
-      "mpModifier": 0
+      "title": "Fight CLub",
+      "author": "Chuck Palahniuk",
+      "CheckOut": false,
+      "DueDate": null
     }
   ]
 }
