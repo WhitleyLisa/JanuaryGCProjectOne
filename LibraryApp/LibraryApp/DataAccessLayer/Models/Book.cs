@@ -8,12 +8,13 @@ namespace LibraryApp
 {
     public class Book
     {
-        string author { get; set; }
-        string title { get; set; }  
-        string genre { get; set; }  
-        bool status { get; set; }
-        DateTime checkedOutDate { get; set; }   
-        DateTime dueDate { get; set; }  
+        public int isbn { get; set; }
+        public string author { get; set; }
+        public string title { get; set; }
+        public string genre { get; set; }
+        public bool status { get; set; }
+        public DateTime checkedOutDate { get; set; }
+        public DateTime dueDate { get; set; }  
 
     }
 }

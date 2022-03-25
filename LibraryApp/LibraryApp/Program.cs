@@ -1,1 +1,8 @@
-﻿/// this is where our start/homepage/directory etc will be. 
+﻿using LibraryApp;
+using LibraryApp.DataAccessLayer.Repositories;
+
+var bookRepo = new BookRepo();
+var testList = bookRepo.GetBooks();
+
+
+Console.WriteLine(testList);
