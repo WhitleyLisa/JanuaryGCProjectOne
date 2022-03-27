@@ -1,46 +1,50 @@
-﻿{
-  "scienceFiction": [
+﻿ [
     {
       "isbn": 1,
       "title": "Starship Troopers",
       "author": "Robert A. Heinlein",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 2,
       "title": "Brave New World",
       "author": "Aldous Huxley",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 3,
       "title": "Dune",
       "author": "Frank Herbert",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 4,
       "title": "Frankenstein",
       "author": "Mary Shelley",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 5,
       "title": "A Scanner Darkly",
       "author": "Philip K. Dick",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 6,
       "title": "Metro 2033",
       "author": "Dmitry Glukhovsky",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     }
   ]
-}

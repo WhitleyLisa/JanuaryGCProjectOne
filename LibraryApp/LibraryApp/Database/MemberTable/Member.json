@@ -10,7 +10,7 @@
           "isbn": 2,
           "title": "One More Thing",
           "author": "B.J. Novak",
-          "checkedOutDate": "", // how to express datetime in a json
+          "checkedOutDateDate": "", // how to express datetime in a json
           "dueDate": ""
         }
       ]

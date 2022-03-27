@@ -1,53 +1,58 @@
-﻿{
-  "romanticComedy": [
+﻿ [
     {
       "isbn": 1,
       "title": "The Unhoneymooners",
       "author": "Christina Lauren",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 2,
       "title": "The Paid Bridesmaid",
       "author": "Sariah Wilson",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 3,
       "title": "Ties That Tether",
       "author": "Jane Igharo",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 4,
       "title": "The Love Hypothesis",
       "author": "Ali Hazelwood",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 5,
       "title": "Get a Life, Chloe Brown",
       "author": "Talia Hibbert",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 6,
       "title": "The Charm Offensive",
       "author": "Alison Cochrun",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 7,
       "title": "The Right Swipe",
       "author": "Alisha Rai",
-      "CheckedOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     }
   ]
-}
