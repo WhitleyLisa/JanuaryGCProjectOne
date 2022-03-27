@@ -46,6 +46,22 @@ namespace LibraryApp.BusinessLayer
                  /// return a book
         }
 
+        public void ReturnBook(Book book)
+        {
+            // what do we want this to look like? 
+            if (book.status == false)
+            {
+                Console.WriteLine("This book is already returned");
+            }
+            else
+            {
+                book.status = false;
+                book.dueDate = "";
+                _bookRepo.UpdateBook(book);
+                Console.WriteLine("This book is now returned, thank you!");
+            }
+
+        }
         public void createNewMembership()
         {
             throw new NotImplementedException();
