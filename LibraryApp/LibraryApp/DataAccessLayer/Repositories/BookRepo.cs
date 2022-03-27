@@ -39,7 +39,13 @@ namespace LibraryApp.DataAccessLayer.Repositories
 
         }
 
-        
+        public List<Book> GetByAuthor(string author)
+        {
+            /// get all books
+            var book = GetBooks();
+            /// filter book by author
+            return book.Where(x => x.author.ToLower() == author.ToLower()).ToList();
+        }
 
         //public string DisplayBooks(List<Book>)
         //{
