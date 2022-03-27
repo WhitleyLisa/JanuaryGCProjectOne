@@ -20,11 +20,13 @@ while (repeat)
         switch (userInput)
         {
             case 1:
-                librarian.getBookList();
+                var displayMe = librarian.getBookList();
+                librarian.DisplayList(displayMe);
                 break;
 
             case 2:
-                librarian.BookSearch();
+                var displaySearchResults = librarian.BookSearch();
+                librarian.DisplayList(displaySearchResults);
                 break;
 
             case 3:
