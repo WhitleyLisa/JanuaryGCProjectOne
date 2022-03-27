@@ -24,12 +24,12 @@ namespace LibraryApp.DataAccessLayer.Repositories
             //Iterate through the files and deserialize them
             foreach (var f in files)
             {
-                var b = JsonConvert.DeserializeObject <List<Book>>(File.ReadAllText(f));
+                var b = JsonConvert.DeserializeObject <Book>(File.ReadAllText(f));
 
                 if(b != null)
                 {
                     //AddToCache(b);
-                    books.AddRange(b);
+                    books.Add(b);
                 }
             }
 
