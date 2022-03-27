@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryApp.DataAccessLayer.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,17 +10,42 @@ namespace LibraryApp.BusinessLayer
     public class Librarian
     {
         List<Book> BookList { get; set; }
-        Member Member { get; set; } 
+        Member Member { get; set; }
+        private BookRepo _bookRepo; 
 
-        public Librarian (List<Book> listOfBooks, Member member)
+        //public Librarian (List<Book> listOfBooks, Member member)
+        //{
+        //    this.BookList = listOfBooks;
+        //    this.Member = member;
+        //}
+        public Librarian()
         {
-            this.BookList = listOfBooks;
-            this.Member = member;
+            _bookRepo = new BookRepo();
         }
 
-        public void getBookList()
+        public List<Book> getBookList()
         {
+            return _bookRepo.GetBooks();
+        }
 
+        public void createNewMembership()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void cancelMembership()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void calculateFees()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void trackBookStatus()
+        {
+            throw new NotImplementedException();
         }
 
 
