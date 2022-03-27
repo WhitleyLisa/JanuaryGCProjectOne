@@ -1,46 +1,50 @@
-﻿{
-  "thriller": [
+﻿[
     {
       "isbn": 1,
       "title": "Sahara",
       "author": "Clive Cussler",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 2,
       "title": "The Hunt For Red October",
       "author": "Tom Clancy",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 3,
       "title": "A Time to Kill",
       "author": "John Grisham",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 4,
       "title": "And Then There Were None",
       "author": "Agatha Christie",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 5,
       "title": "The Talented Mr. Ripley",
       "author": "Patricia Highsmith",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 6,
       "title": "Fight CLub",
       "author": "Chuck Palahniuk",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     }
   ]
-}

@@ -12,9 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Database\BookTable\comedy - Copy.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="Database\BookTable\comedy.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

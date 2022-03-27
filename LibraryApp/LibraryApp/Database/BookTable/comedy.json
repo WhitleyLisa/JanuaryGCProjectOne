@@ -1,53 +1,58 @@
-﻿{
-  "comedy": [
+﻿   [
     {
       "isbn": 1,
       "title": "The Ultimate Hitchhiker's Guide To The Galaxy",
       "author": "Douglas Adams",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 2,
       "title": "One More Thing",
       "author": "B.J. Novak",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 3,
       "title": "Bossypants",
       "author": " Tina Fey",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 4,
       "title": "Hyperbole And A Half",
       "author": "Allie Brosh",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 5,
       "title": "Paddle Your Own Canoe",
       "author": "Nick Offerman",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 6,
       "title": "The Sellout",
       "author": "Paul Beatty",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status": false
     },
     {
       "isbn": 7,
       "title": "Little Victories",
       "author": "Jason Gay",
-      "CheckOut": false,
-      "DueDate": null
+      "checkedOutDate": null,
+      "dueDate": null,
+      "status" : false
     }
   ]
-}
