@@ -28,6 +28,24 @@ namespace LibraryApp.BusinessLayer
             return _bookRepo.GetBooks();
         }
 
+        public void CheckOutBook(Book book)
+        {
+            /// select a book from the list
+            /// if its checked out let them know
+            if (book.status == true)
+            {
+                Console.WriteLine("This book is already checked out, please select another.");
+            }
+            else
+            {
+                /// if its not checked out - check it out to them and set due date for 2 weeks from today
+                book.status = true;
+                var dueDate = DateTime.Now.AddDays(14);
+                book.dueDate = dueDate.ToString();
+            }
+                 /// return a book
+        }
+
         public void createNewMembership()
         {
             throw new NotImplementedException();
