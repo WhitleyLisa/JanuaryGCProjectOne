@@ -8,7 +8,7 @@ string error = "I'm sorry, that is not a valid option.";
 
 while (repeat)
 {
-    Console.WriteLine("Welcome to the library! What would you like to do? (Please choose a number below)" +
+    Console.WriteLine("\nWelcome to the library! What would you like to do? (Please choose a number below)" +
         "\n 1. View list of books 2. Search books 3. Return a book 4. Exit");
     int userInput;
     bool tryParseBool = int.TryParse(Console.ReadLine(), out userInput);
