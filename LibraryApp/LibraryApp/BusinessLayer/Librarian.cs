@@ -25,15 +25,18 @@ namespace LibraryApp.BusinessLayer
 
         public void DisplayList(List<Book> bookList)
         {
-            //display due date if book is checked out using DateTime.Parse
+            
             foreach (Book book in bookList)
             {
                 Console.Write($"{book.id}. {book.title}, by {book.author}.");
+                //checks if the book is currently checked out, since the status bool is set to true when it is
                 if (book.status)
                 {
+                    //display due date if book is checked out using DateTime.Parse
                     var displayDueDate = DateTime.Parse(book.dueDate);
                     Console.WriteLine($"This book is checked out and due back {displayDueDate}");
                 }
+                //this is for formatting purposes since the first half of our output (before the if statement) does not have a line break
                 else
                     Console.WriteLine();
                     
@@ -68,14 +71,17 @@ namespace LibraryApp.BusinessLayer
 
         public List<Book> BookSearch()
         {
+            //Prompt user and parse their input
             Console.WriteLine("\nWould you like to search by:\n1. Author 2. Title");
             int userInputSearchOption;
             bool tryParseBoolSearch = int.TryParse(Console.ReadLine(), out userInputSearchOption);
+            //this will loop the user until they enter a valid input
             while (!tryParseBoolSearch)
             {
                 Console.WriteLine("\nWould you like to search by:\n1. Author 2. Title");
                 tryParseBoolSearch = int.TryParse(Console.ReadLine(), out userInputSearchOption);
             }
+            //Prompts user for author name, then feeds it through the search method
             if(userInputSearchOption == 1)
             {
                 Console.WriteLine("Please enter the name of the author you're looking for:");
@@ -83,6 +89,7 @@ namespace LibraryApp.BusinessLayer
                 var returnAuthorSearch = _bookRepo.GetByAuthor(authorInput);
                 return returnAuthorSearch;
             }
+            //Prompts user for book title, then feeds it through the search method
             else
             {
                 Console.WriteLine("Please enter the title of the book you're looking for:");
