@@ -47,6 +47,14 @@ namespace LibraryApp.DataAccessLayer.Repositories
             return book.Where(x => x.author.ToLower() == author.ToLower()).ToList();
         }
 
+        public List<Book> GetByTitleKeyword(string keyword)
+        {
+            /// get books
+            var book = GetBooks();
+            /// filter by keyword
+            return book.Where(x => x.title.ToLower().Contains(keyword.ToLower())).ToList();
+        }
+
         //public string DisplayBooks(List<Book>)
         //{
         //    foreach
