@@ -42,8 +42,11 @@ namespace LibraryApp.BusinessLayer
                 book.status = true;
                 var dueDate = DateTime.Now.AddDays(14);
                 book.dueDate = dueDate.ToString();
+
+                _bookRepo.UpdateBook(book);
+
+                Console.WriteLine($"I have checked out this book for you - please return it in two weeks on {book.dueDate}");
             }
-                 /// return a book
         }
 
         public void createNewMembership()
