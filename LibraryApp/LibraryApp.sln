@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryApp", "LibraryApp\LibraryApp.csproj", "{6A7599DB-F2D5-4E2C-8D75-6BFD837D19C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarayAppTests", "LibrarayAppTests\LibrarayAppTests.csproj", "{A2409773-5AE3-467D-BF01-ED896C8A78EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryAppTests", "LibrarayAppTests\LibraryAppTests.csproj", "{A2409773-5AE3-467D-BF01-ED896C8A78EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
