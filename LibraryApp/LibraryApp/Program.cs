@@ -1,8 +1,10 @@
 ﻿using LibraryApp;
+using LibraryApp.BusinessLayer;
 using LibraryApp.DataAccessLayer.Repositories;
 
 bool repeat = true;
 string error = "I'm sorry, that is not a valid option.";
+var librarian = new Librarian();
 
 
 
@@ -18,11 +20,11 @@ while (repeat)
         switch (userInput)
         {
             case 1:
-                Console.WriteLine("Do list stuff");
+                librarian.getBookList();
                 break;
 
             case 2:
-                Console.WriteLine("Do search stuff");
+                librarian.BookSearch();
                 break;
 
             case 3:
