@@ -55,12 +55,27 @@ namespace LibraryApp.DataAccessLayer.Repositories
             return book.Where(x => x.title.ToLower().Contains(keyword.ToLower())).ToList();
         }
 
+        public Book GetBookById (int id)
+        {
+            string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+
+            string text = File.ReadAllText(executableLocation + @"\Database\BookTable\{id}.json");
+            var book = JsonConvert.DeserializeObject<Book>(text);
+
+            return book;
+        }
+
         public void UpdateBook(Book book)
         {
-            /// get book from the list 
-            
+            /// grab book by id 
+            var bookToUpdate = GetBookById(book.id);
+            bookToUpdate.status = book.status;
+            bookToUpdate.dueDate = book.dueDate;
 
-            /// 
+            string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(bookToUpdate, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(@"\Database\BookTable\{book.id}.json", output);
+ 
         }
 
         //public string DisplayBooks(List<Book>)
