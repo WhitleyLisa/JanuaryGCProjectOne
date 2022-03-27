@@ -33,7 +33,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
                 }
             }
 
-            books = books.OrderBy(x => x.isbn).ToList();
+            books = books.OrderBy(x => x.id).ToList();
 
             return books;
 

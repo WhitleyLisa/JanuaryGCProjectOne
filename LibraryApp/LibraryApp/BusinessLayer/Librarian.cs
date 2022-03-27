@@ -46,6 +46,35 @@ namespace LibraryApp.BusinessLayer
                  /// return a book
         }
 
+        public void BookSearch()
+        {
+            Console.WriteLine("\nWould you like to search by:\n1. Author 2. Title");
+            int userInputSearchOption;
+            bool tryParseBoolSearch = int.TryParse(Console.ReadLine(), out userInputSearchOption);
+            if (tryParseBoolSearch)
+            {
+                switch (userInputSearchOption)
+                {
+                    case 1:
+                        Console.WriteLine("Please enter the name of the author you're looking for:");
+                        var authorInput = Console.ReadLine();
+                        _bookRepo.GetByAuthor(authorInput);
+                        break;
+                    case 2:
+                        Console.WriteLine("Please enter the title of the book you're looking for:");
+                        var titleInput = Console.ReadLine();
+                        _bookRepo.GetByTitleKeyword(titleInput);
+                        break;
+                    default:
+                        Console.WriteLine("I'm sorry, that's not a valid choice. I am returning you to the main menu.");
+                        break;
+                }
+                    
+            }
+            else
+                Console.WriteLine("I'm sorry, that's not a valid choice. I am returning you to the main menu.");
+        }
+
         public void createNewMembership()
         {
             throw new NotImplementedException();
