@@ -33,7 +33,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
                 }
             }
 
-            books = books.OrderBy(x => x.isbn).ToList();
+            books = books.OrderBy(x => x.id).ToList();
 
             return books;
 
@@ -55,6 +55,29 @@ namespace LibraryApp.DataAccessLayer.Repositories
             return book.Where(x => x.title.ToLower().Contains(keyword.ToLower())).ToList();
         }
 
+        public Book GetBookById (int id)
+        {
+            string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+
+            string text = File.ReadAllText(executableLocation + @"\Database\BookTable\{id}.json");
+            var book = JsonConvert.DeserializeObject<Book>(text);
+
+            return book;
+        }
+
+        public void UpdateBook(Book book)
+        {
+            /// grab book by id 
+            var bookToUpdate = GetBookById(book.id);
+            bookToUpdate.status = book.status;
+            bookToUpdate.dueDate = book.dueDate;
+
+            string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
+            string output = Newtonsoft.Json.JsonConvert.SerializeObject(bookToUpdate, Newtonsoft.Json.Formatting.Indented);
+            File.WriteAllText(@"\Database\BookTable\{book.id}.json", output);
+ 
+        }
+
         //public string DisplayBooks(List<Book>)
         //{
         //    foreach
@@ -64,7 +87,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
         //private void AddToCache(Book book)
         //{
         //    //Any is a boolean. It checks if if one or more objects fit this criteria
-        //    if (!Cache.Any(x => x.isbn == book.isbn))
+        //    if (!Cache.Any(x => x.id == book.id))
         //    {
         //        Cache.Add(book);
         //    }
