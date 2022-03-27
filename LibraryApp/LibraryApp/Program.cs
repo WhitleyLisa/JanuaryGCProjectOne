@@ -1,10 +1,43 @@
 ﻿using LibraryApp;
 using LibraryApp.DataAccessLayer.Repositories;
 
-var bookRepo = new BookRepo();
-var testList = bookRepo.GetBooks();
+bool repeat = true;
+string error = "I'm sorry, that is not a valid option.";
 
-foreach(Book book in testList)
+
+
+while (repeat)
 {
-    Console.WriteLine($"{book.isbn}. {book.title}, by {book.author}");
+    Console.WriteLine("Welcome to the library! What would you like to do? (Please choose a number below)" +
+        "\n 1. View list of books 2. Search books 3. Return a book 4. Exit");
+    int userInput;
+    bool tryParseBool = int.TryParse(Console.ReadLine(), out userInput);
+
+    if (tryParseBool)
+    {
+        switch (userInput)
+        {
+            case 1:
+                Console.WriteLine("Do list stuff");
+                break;
+
+            case 2:
+                Console.WriteLine("Do search stuff");
+                break;
+
+            case 3:
+                Console.WriteLine("Return book stuff");
+                break;
+
+            case 4:
+                repeat = false;
+                break;
+
+            default:
+                Console.WriteLine(error);
+                break;
+        }
+    }
+    else
+        Console.WriteLine(error); 
 }
