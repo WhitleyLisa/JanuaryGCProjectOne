@@ -33,7 +33,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
                 }
             }
 
-            books = books.OrderBy(x => x.isbn).ToList();
+            books = books.OrderBy(x => x.id).ToList();
 
             return books;
 
@@ -55,6 +55,14 @@ namespace LibraryApp.DataAccessLayer.Repositories
             return book.Where(x => x.title.ToLower().Contains(keyword.ToLower())).ToList();
         }
 
+        public void UpdateBook(Book book)
+        {
+            /// get book from the list 
+            
+
+            /// 
+        }
+
         //public string DisplayBooks(List<Book>)
         //{
         //    foreach
@@ -64,7 +72,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
         //private void AddToCache(Book book)
         //{
         //    //Any is a boolean. It checks if if one or more objects fit this criteria
-        //    if (!Cache.Any(x => x.isbn == book.isbn))
+        //    if (!Cache.Any(x => x.id == book.id))
         //    {
         //        Cache.Add(book);
         //    }
