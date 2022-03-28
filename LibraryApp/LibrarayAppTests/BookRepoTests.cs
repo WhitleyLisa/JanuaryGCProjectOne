@@ -93,19 +93,25 @@ namespace LibraryAppTests.DataAccessLayer.Repositories.Tests
         }
 
         [TestCase(1)]
-        public void UpdateBookTest(int id)
-        {
+        public void UpdateBookTest(int id) 
+        { 
             // Arrange
             var _bookRepo = new BookRepo();
             var testBook = _bookRepo.GetBookById(id);
+
+            var intitCheckoutDate = testBook.checkedOutDateDate;
             var initStatus = testBook.status;
+            var initDueDate = testBook.dueDate;
 
             // Act
             _bookRepo.UpdateBook(testBook);
             var updatedBook = _bookRepo.GetBookById(id);
 
             //Assert
-            Assert.AreNotEqual(updatedBook.status, !initStatus);
+            Assert.AreNotEqual(updatedBook.status, initStatus);
+            Assert.AreNotEqual(updatedBook.checkedOutDateDate, intitCheckoutDate);
+            Assert.AreNotEqual(updatedBook.dueDate, initDueDate);
+            Assert.IsNotNull(updatedBook.dueDate);
         }
     }
 }

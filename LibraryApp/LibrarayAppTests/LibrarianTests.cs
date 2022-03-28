@@ -64,7 +64,7 @@ namespace LibraryAppTests.DataAccessLayer.Repositories.Tests
             _librarian.CheckOutBook(testBook);
 
             // Assert
-            Assert.AreEqual(initialStatus, testBook.status); // Not confident about this test
+            Assert.AreEqual(initialStatus, testBook.status);
             Assert.AreEqual(DateTime.Today, null);
             Assert.AreEqual(DateTime.Today.AddDays(14), null);
         }
@@ -74,34 +74,20 @@ namespace LibraryAppTests.DataAccessLayer.Repositories.Tests
         {
             // Arrange
             _librarian = new Librarian();
-            _bookRepo = new BookRepo();
-
-            List<Book> bookList = new List<Book>();
-            bookList = _bookRepo.GetByAuthor(criteria);
-
-            var testBook = new Book();
-            testBook = bookList.First(r => r.author == criteria);
 
             // Act
             var result = _librarian.BookSearch();
             var resultBook = result.First(r => r.author == criteria);
 
             // Assert
-            Assert.AreEqual(resultBook.id, testBook.id);
+            Assert.AreEqual(resultBook.author, criteria);
         }
 
-        [TestCase(2, "The Ultimate Hitchhiker's Guide To The Galaxy")]
+        [TestCase("The Ultimate Hitchhiker's Guide To The Galaxy")]
         public void BookSearch_ByTitle(string criteria)
         {
             // Arrange
             _librarian = new Librarian();
-            _bookRepo = new BookRepo();
-
-            List<Book> bookList = new List<Book>();
-            var testBook = new Book();
-
-            bookList = _bookRepo.GetByTitleKeyword(criteria);
-            testBook = bookList.First(r => r.author == criteria);
 
             // Act
             var result = _librarian.BookSearch();
@@ -109,7 +95,7 @@ namespace LibraryAppTests.DataAccessLayer.Repositories.Tests
             var resultBook = result.First(r => r.title == criteria);
 
             // Assert
-            Assert.AreEqual(resultBook.id, testBook.id);
+            Assert.AreEqual(resultBook.title, criteria);
         }
 
     }
