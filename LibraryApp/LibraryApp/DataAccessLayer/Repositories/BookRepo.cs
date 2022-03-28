@@ -59,7 +59,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
         {
             string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
 
-            string text = File.ReadAllText(executableLocation + @"\Database\BookTable\{id}.json");
+            string text = File.ReadAllText(executableLocation + @$"\Database\BookTable\{id}.json");
             var book = JsonConvert.DeserializeObject<Book>(text);
 
             return book;
@@ -74,7 +74,7 @@ namespace LibraryApp.DataAccessLayer.Repositories
 
             string executableLocation = AppDomain.CurrentDomain.BaseDirectory;
             string output = Newtonsoft.Json.JsonConvert.SerializeObject(bookToUpdate, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText(@"\Database\BookTable\{book.id}.json", output);
+            File.WriteAllText(executableLocation + @$"\Database\BookTable\{book.id}.json", output);
  
         }
 

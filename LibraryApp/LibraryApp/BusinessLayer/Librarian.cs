@@ -75,12 +75,14 @@ namespace LibraryApp.BusinessLayer
             Console.WriteLine("\nWould you like to search by:\n1. Author 2. Title");
             int userInputSearchOption;
             bool tryParseBoolSearch = int.TryParse(Console.ReadLine(), out userInputSearchOption);
+
             //this will loop the user until they enter a valid input
             while (!tryParseBoolSearch)
             {
                 Console.WriteLine("\nWould you like to search by:\n1. Author 2. Title");
                 tryParseBoolSearch = int.TryParse(Console.ReadLine(), out userInputSearchOption);
             }
+
             //Prompts user for author name, then feeds it through the search method
             if(userInputSearchOption == 1)
             {
@@ -89,6 +91,7 @@ namespace LibraryApp.BusinessLayer
                 var returnAuthorSearch = _bookRepo.GetByAuthor(authorInput);
                 return returnAuthorSearch;
             }
+
             //Prompts user for book title, then feeds it through the search method
             else
             {
