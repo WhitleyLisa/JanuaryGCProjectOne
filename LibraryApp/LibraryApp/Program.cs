@@ -22,6 +22,22 @@ while (repeat)
             case 1:
                 var displayMe = librarian.getBookList();
                 librarian.DisplayList(displayMe);
+                Console.WriteLine("Would you like to check out one of these books?(Y/N)");
+                var checkOutInput = Console.ReadLine().ToLower();
+                if (checkOutInput == "y")
+                {
+                    //Ensures user input is a valid option
+                    Console.WriteLine("Please enter the number of the book you would like to check out:");
+                    int checkOutInt;
+                    bool checkOutInputParse  = int.TryParse(Console.ReadLine(), out checkOutInt);
+                    while (!checkOutInputParse || checkOutInt >= displayMe.Count || checkOutInt <= 0)
+                    {
+                        Console.WriteLine(error);
+                        checkOutInputParse = int.TryParse(Console.ReadLine(), out checkOutInt);
+                    }
+                    //Adjusts user input to match index of the book they chose, then checks the book out
+                    librarian.CheckOutBook(displayMe[checkOutInt-1]);
+                }
                 break;
 
             case 2:
