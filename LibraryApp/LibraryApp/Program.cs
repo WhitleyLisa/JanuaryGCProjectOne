@@ -35,7 +35,7 @@ while (repeat)
                         Console.WriteLine(error);
                         checkOutInputParse = int.TryParse(Console.ReadLine(), out checkOutInt);
                     }
-                    //Uses LINQ to find the book matching the user input, then generates a "list" that only contains that book                    
+                    //Adjusts the users input to match the index of the book they've selected                    
                     librarian.CheckOutBook(displayMe[checkOutInt-1]);
                 }
                 break;
