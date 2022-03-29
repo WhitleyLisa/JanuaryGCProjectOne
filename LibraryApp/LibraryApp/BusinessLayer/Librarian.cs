@@ -54,7 +54,7 @@ namespace LibraryApp.BusinessLayer
             /// if its checked out let them know
             if (book.status == true)
             {
-                Console.WriteLine("This book is already checked out, please select another.");
+                Console.WriteLine("\nThis book is already checked out, please select another.");
             }
             else
             {
@@ -65,7 +65,7 @@ namespace LibraryApp.BusinessLayer
 
                 _bookRepo.UpdateBook(book);
 
-                Console.WriteLine($"I have checked out this book for you - please return it in two weeks on {book.dueDate}");
+                Console.WriteLine($"\nI have checked out {book.title} for you - please return it in two weeks on {book.dueDate}");
             }
         }
 
@@ -86,7 +86,7 @@ namespace LibraryApp.BusinessLayer
             //Prompts user for author name, then feeds it through the search method
             if(userInputSearchOption == 1)
             {
-                Console.WriteLine("Please enter the name of the author you're looking for:");
+                Console.WriteLine("\nPlease enter the name of the author you're looking for:");
                 var authorInput = Console.ReadLine();
                 var returnAuthorSearch = _bookRepo.GetByAuthor(authorInput);
                 return returnAuthorSearch;
@@ -95,7 +95,7 @@ namespace LibraryApp.BusinessLayer
             //Prompts user for book title, then feeds it through the search method
             else
             {
-                Console.WriteLine("Please enter the title of the book you're looking for:");
+                Console.WriteLine("\nPlease enter the title of the book you're looking for:");
                 var titleInput = Console.ReadLine();
                 var returnTitleSearch = _bookRepo.GetByTitleKeyword(titleInput);
                 return returnTitleSearch;
@@ -107,14 +107,14 @@ namespace LibraryApp.BusinessLayer
             // what do we want this to look like? 
             if (book.status == false)
             {
-                Console.WriteLine("This book is already returned");
+                Console.WriteLine("\nThis book is already returned");
             }
             else
             {
                 book.status = false;
                 book.dueDate = "";
                 _bookRepo.UpdateBook(book);
-                Console.WriteLine("This book is now returned, thank you!");
+                Console.WriteLine("\nThis book is now returned, thank you!");
             }
 
         }

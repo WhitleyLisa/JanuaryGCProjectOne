@@ -77,21 +77,6 @@ namespace LibraryApp.DataAccessLayer.Repositories
             File.WriteAllText(executableLocation + @$"\Database\BookTable\{book.id}.json", output);
  
         }
-
-        //public string DisplayBooks(List<Book>)
-        //{
-        //    foreach
-
-        //}
-
-        //private void AddToCache(Book book)
-        //{
-        //    //Any is a boolean. It checks if if one or more objects fit this criteria
-        //    if (!Cache.Any(x => x.id == book.id))
-        //    {
-        //        Cache.Add(book);
-        //    }
-        //}
-
+                
     }
 }
