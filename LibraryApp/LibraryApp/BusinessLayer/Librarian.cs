@@ -32,6 +32,7 @@ namespace LibraryApp.BusinessLayer
                 //checks if the book is currently checked out, since the status bool is set to true when it is
                 if (book.status)
                 {
+                    
                     //display due date if book is checked out using DateTime.Parse
                     var displayDueDate = DateTime.Parse(book.dueDate);
                     Console.WriteLine($"This book is checked out and due back {displayDueDate}");
