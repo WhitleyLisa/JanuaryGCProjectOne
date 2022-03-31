@@ -35,7 +35,7 @@ namespace LibraryApp.BusinessLayer
                     
                     //display due date if book is checked out using DateTime.Parse
                     var displayDueDate = DateTime.Parse(book.dueDate);
-                    Console.WriteLine($"This book is checked out and due back {displayDueDate}");
+                    Console.WriteLine($" This book is checked out and due back {displayDueDate}");
                 }
                 //this is for formatting purposes since the first half of our output (before the if statement) does not have a line break
                 else
