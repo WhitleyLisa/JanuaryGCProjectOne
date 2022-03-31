@@ -13,7 +13,7 @@ namespace LibraryApp
         public string title { get; set; }
         public string genre { get; set; }
         public bool status { get; set; }
-        public string checkedOutDateDate { get; set; }
+        public string checkedOutDate { get; set; }
         public string dueDate { get; set; }  
 
     }
